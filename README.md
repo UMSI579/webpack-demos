@@ -4,8 +4,6 @@ These demos are purposely written in a simple and clear style. You will find no 
 
 ## How to use
 
-First, install [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) globally.
-
 ```bash
 $ npm i -g webpack webpack-dev-server
 ```
@@ -13,7 +11,7 @@ $ npm i -g webpack webpack-dev-server
 Then, clone the repo.
 
 ```bash
-$ git clone https://github.com/ruanyf/webpack-demos.git
+$ git clone https://github.com/UMSI579/webpack-demos.git 
 ```
 
 Install the dependencies.
