@@ -1,4 +1,4 @@
-This repo is a collection of simple demos of Webpack.
+This repo is a collection of simple demos of Webpack, based on [https://github.com/ruanyf/webpack-demos.git](https://github.com/ruanyf/webpack-demos.git).
 
 These demos are purposely written in a simple and clear style. You will find no difficulty in following them to learn the powerful tool.
 
@@ -62,37 +62,13 @@ After having `webpack.config.js`, you can invoke Webpack without any arguments.
 $ webpack
 ```
 
-Some command-line options you should know.
-
-- `webpack` – building for development
-- `webpack -p` – building for production (minification)
-- `webpack --watch` – for continuous incremental building
-- `webpack -d` – including source maps
-- `webpack --colors` – making building output pretty
 
 You could customize `scripts` field in your package.json file as following.
 
-```javascript
-// package.json
-{
-  // ...
-  "scripts": {
-    "dev": "webpack-dev-server --devtool eval --progress --colors",
-    "deploy": "NODE_ENV=production webpack -p"
-  },
-  // ...
-}
-```
+
 
 ## Index
 
-1. [Entry file](#demo01-entry-file-source)
-1. [Multiple entry files](#demo02-multiple-entry-files-source)
-1. [Babel-loader](#demo03-babel-loader-source)
-1. [CSS-loader](#demo04-css-loader-source)
-1. [Image loader](#demo05-image-loader-source)
-1. [CSS Module](#demo06-css-module-source)
-1. [UglifyJs Plugin](#demo07-uglifyjs-plugin-source)
 1. [HTML Webpack Plugin and Open Browser Webpack Plugin](#demo08-html-webpack-plugin-and-open-browser-webpack-plugin-source)
 1. [Environment flags](#demo09-environment-flags-source)
 1. [Code splitting](#demo10-code-splitting-source)
@@ -547,7 +523,7 @@ module.exports = {
 Launch the server.
 
 ```bash
-$ cd demo08
+$ cd demo07
 $ npm run dev
 ```
 
@@ -662,7 +638,7 @@ module.exports = {
 Launch the server.
 
 ```bash
-$ cd demo10
+$ cd demo9
 $ npm run dev
 ```
 

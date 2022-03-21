@@ -1,1 +1,1 @@
-document.write('<h2>Hello Webpack</h2>');
+document.write('<h2>Hello Webpack (demo 2)</h2>');

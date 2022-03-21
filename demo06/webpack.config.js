@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   entry: './main.jsx',
   output: {
     filename: 'bundle.js'
@@ -31,4 +31,14 @@ module.exports = {
       }
     ]
   }
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    config.optimization = {
+      minimize: false
+    };
+  }
+
+  return config;
 };

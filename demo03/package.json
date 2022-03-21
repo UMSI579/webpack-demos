@@ -1,9 +1,11 @@
 {
   "name": "webpack-demo3",
   "version": "1.0.0",
+  "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server --open",
-    "build": "webpack -p"
+    "serve": "webpack-dev-server --mode=development",
+    "devbuild": "webpack --mode=development",
+    "build": "webpack --mode=production"
   },
   "license": "MIT"
 }

@@ -1,18 +1,24 @@
-var HtmlwebpackPlugin = require('html-webpack-plugin');
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
-
 module.exports = {
-  entry: './main.js',
+  entry: './index.js',
   output: {
     filename: 'bundle.js'
   },
-  plugins: [
-    new HtmlwebpackPlugin({
-      title: 'Webpack-demos',
-      filename: 'index.html'
-    }),
-    new OpenBrowserPlugin({
-      url: 'http://localhost:8080'
-    })
-  ]
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2015', 'react']
+          }
+        }
+      },
+    ]
+  }
 };

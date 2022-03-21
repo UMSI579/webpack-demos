@@ -1,9 +1,10 @@
 {
-  "name": "webpack-demo08",
+  "name": "webpack-demo15",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "serve": "webpack-dev-server --mode=development",
+    "devbuild": "webpack --mode=development",
+    "build": "webpack --mode=production"
   },
   "license": "MIT"
 }
